@@ -5,6 +5,7 @@ How to set up the KangarooBanking Web App
 3.	Go to the folder where XAMPP or MAMP is installed
 4.	Find the folder ‘htdocs’ and place the KangarooBanking root folder there
 5.	Set up the KangarooBanking database through phpmyadmin
+
     a.	Go to your browser (preferably Google Chrome) and type:
         i.	http://localhost/phpmyadmin (for Windows users) or
         ii.	http://localhost:8888/phpmyadmin (for mac users)
