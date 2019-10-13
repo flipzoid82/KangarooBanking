@@ -9,6 +9,7 @@ How to set up the KangarooBanking Web App
     a.	Go to your browser (preferably Google Chrome) and type:
         i.	http://localhost/phpmyadmin (for Windows users) or
         ii.	http://localhost:8888/phpmyadmin (for mac users)
+    
     b.	Create an admin user with database-wide privileges:
         i.	Locate the ‘User accounts’ tab on the main page
         ii.	Click the ‘Add user account’ link under the ‘new’ section of the main page
@@ -17,6 +18,7 @@ How to set up the KangarooBanking Web App
         v.	For the Password enter admin, then reenter
         vi.	Under the ‘Global privileges’ section, check the ‘check all’ checkbox
         vii.	Press the ‘Go’ button located in the bottom of the page   
+    
     c.	To set up the tables necessary to run the web app:
         i.	Locate the SQL tab on top of the main page
         ii.	In the ‘Run SQL query/queries on server "localhost":’ field, run the following queries to create the tables for the web app:
@@ -58,6 +60,7 @@ How to set up the KangarooBanking Web App
             INSERT INTO savings_acct (`user_ssn`, `svg_acct_num`, `balance`) VALUES (123456789, 89923221, 1600.21);
             INSERT INTO savings_acct (`user_ssn`, `svg_acct_num`, `balance`) VALUES (111111111, 89110229, 0);
             INSERT INTO savings_acct (`user_ssn`, `svg_acct_num`, `balance`) VALUES (622130993, 89653321, 5002.55);             
-
+            
 6.	Edit each test case user’s profile through the web app. (i.e. add the user’s address, phone number, etc.)
+
 7.	Run the web app via localhost:8888 for MAMP or localhost:8000 for XAMPP.
