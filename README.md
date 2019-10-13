@@ -1,9 +1,13 @@
 How to set up the KangarooBanking Web App
 
 1.	Install XAMPP (Windows) or MAMP (Mac)
+
 2.	Download the KangarooBanking root folder
+
 3.	Go to the folder where XAMPP or MAMP is installed
+
 4.	Find the folder ‘htdocs’ and place the KangarooBanking root folder there
+
 5.	Set up the KangarooBanking database through phpmyadmin
 
     a.	Go to your browser (preferably Google Chrome) and type:
@@ -75,3 +79,7 @@ How to set up the KangarooBanking Web App
 6.	Edit each test case user’s profile through the web app. (i.e. add the user’s address, phone number, etc.)
 
 7.	Run the web app via localhost:8888 for MAMP or localhost:8000 for XAMPP.
+
+8.  Sign up as a new user. Please refer to TestCase Users excel spreadsheet for test case users.
+
+9.  Log in as one of the newly created users.
