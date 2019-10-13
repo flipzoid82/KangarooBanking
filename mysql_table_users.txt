@@ -1,0 +1,46 @@
+CREATE TABLE users (
+	user_ssn INT(9) NOT NULL PRIMARY KEY,
+    user_first VARCHAR(32) NOT NULL,
+    user_last VARCHAR(32) NOT NULL,
+    user_email VARCHAR(256) NOT NULL,
+    user_uid VARCHAR(32)NOT NULL,
+    user_pwd VARCHAR(256) NOT NULL,
+	user_street VARCHAR(256) NOT NULL,
+	user_state VARCHAR(2) NOT NULL,
+	user_zip INT(5) NOT NULL,
+	user_phone INT(10) NOT NULL,
+	user_dob DATE NOT NULL
+);
+
+CREATE TABLE checking_acct (
+	user_ssn INT(9) NOT NULL PRIMARY KEY,
+    c_acct_num INT(8) NOT NULL,
+    balance DECIMAL(13,2) NOT NULL
+);
+
+CREATE TABLE savings_acct (
+	user_ssn INT(9) NOT NULL PRIMARY KEY,
+    svg_acct_num INT(8) NOT NULL,
+    balance DECIMAL(13,2) NOT NULL
+);
+
+SELECT * FROM users WHERE `user_ssn`=$ssn;
+
+
+
+//Creating the Checking Account Table
+CREATE TABLE checking_acct (user_ssn INT(9) NOT NULL PRIMARY KEY, c_acct_num int(8) NOT NULL, balance decimal(13,2) NOT NULL);
+
+//Creating the Savings Account Table
+CREATE TABLE savings_acct (user_ssn INT(9) NOT NULL PRIMARY KEY, svg_acct_num int(8) NOT NULL, balance decimal(13,2) NOT NULL);
+
+//Inserting values in Checking Account
+INSERT INTO checking_acct (`user_ssn`, `c_acct_num`, `balance`) VALUES (602110295, 12345678, 1600.32); 
+
+//Inserting values in Savings Account
+INSERT INTO savings_acct (`user_ssn`, `svg_acct_num`, `balance`) VALUES (602110295, 11245318, 800);
+
+//Selecting from 2 tables
+SELECT users.user_first, users.user_last, checking_acct.c_acct_num, checking_acct.balance 
+FROM users, checking_acct 
+WHERE users.user_snn=checking_acct.user_ssn;
