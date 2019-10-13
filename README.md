@@ -41,12 +41,12 @@ How to set up the KangarooBanking Web App
               user_email VARCHAR(256) NOT NULL,
               user_uid VARCHAR(32)NOT NULL,
               user_pwd VARCHAR(256) NOT NULL,
-              user_street VARCHAR(256) NOT NULL,
-              user_city VARCHAR(256) NOT NULL,
-              user_state VARCHAR(2) NOT NULL,
-              user_zip INT(5) NOT NULL,
-              user_phone INT(10) NOT NULL,
-              user_dob DATE NOT NULL
+              user_street VARCHAR(256) NULL,
+              user_city VARCHAR(256) NULL,
+              user_state VARCHAR(2) NULL,
+              user_zip INT(5) NULL,
+              user_phone INT(10) NULL,
+              user_dob DATE NULL
             );
 
             CREATE TABLE checking_acct (
