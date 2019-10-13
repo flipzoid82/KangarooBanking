@@ -1,4 +1,4 @@
-How to set up the KangarooBanking Webapp
+How to set up the KangarooBanking Web App
 
 1.	Install XAMPP (Windows) or MAMP (Mac)
 2.	Download the KangarooBanking root folder
